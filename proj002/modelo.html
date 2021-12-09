@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano"> <!--Input abre uma caixa de texto-->
+            </p>
+            <p>Etnia:
+                <input type="radio" name="radetn" id="hum" checked> <!--radio: marcação bolinha-->
+                <label for="hum">Humano</label> <!--label: texto ao lado da marcação-->
+                <input type="radio" name="radetn" id="mut">
+                <label for="mut">Mutante</label>
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="clicar()"> <!-- função-->
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+            <!--<img id = 'foto' src="" alt="">--> <!-- Adicionar img pelo Html para ser alterada no JS-->
+        </div>
+    </section>
+    <footer>
+        <p>Kauan Matheus</p>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
